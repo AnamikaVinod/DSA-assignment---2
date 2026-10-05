@@ -1,0 +1,70 @@
+QUESTION 8(c) – ANALYSIS OF MERGE SORT AND QUICK SORT
+
+1. Number of Passes / Partitions
+
+Merge Sort:
+For 8 elements, Merge Sort requires 3 levels of merging.
+
+Quick Sort:
+For the given input, 5 partitions were performed.
+The pivots used were:
+147, 102, 456, 275, 324
+
+
+2. Comparisons / Major Operations
+
+Merge Sort:
+17 comparisons were performed for the given input.
+
+Quick Sort:
+16 comparisons were performed for the given input.
+
+Therefore, Quick Sort required one fewer comparison for this particular input.
+
+
+3. Time Complexity
+
+Merge Sort:
+Best Case    : O(n log n)
+Average Case : O(n log n)
+Worst Case   : O(n log n)
+
+Quick Sort:
+Best Case    : O(n log n)
+Average Case : O(n log n)
+Worst Case   : O(n²)
+
+
+4. Additional Space
+
+Merge Sort:
+O(n), because extra space is required for merging.
+
+Quick Sort:
+O(log n) average case due to recursion.
+In the worst case, it can require O(n) stack space.
+
+
+5. Comparison
+
+Parameter              Merge Sort          Quick Sort
+-------------------------------------------------------
+Passes/Partitions      3 merge levels      5 partitions
+Comparisons            17                  16
+Best Case              O(n log n)          O(n log n)
+Average Case           O(n log n)          O(n log n)
+Worst Case             O(n log n)          O(n²)
+Additional Space       O(n)                O(log n) average
+
+
+6. Conclusion
+
+For the given input, Quick Sort performed fewer comparisons than
+Merge Sort and requires less additional space on average.
+
+However, for large fixed-length keys, Merge Sort is more suitable
+when predictable and consistent performance is important because
+its worst-case time complexity is always O(n log n).
+
+Therefore, Merge Sort is preferred when guaranteed and reliable
+performance is required for large data sets.
